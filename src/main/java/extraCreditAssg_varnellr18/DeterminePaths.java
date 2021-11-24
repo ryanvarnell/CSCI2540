@@ -39,11 +39,8 @@ public class DeterminePaths {
 
 			// If the airline doesn't serve either city, say so and move onto the next line of the request file.
 			if (!flightMap.servesCity(originCity) || !flightMap.servesCity(destinationCity)) {
-				System.out.print("The airline does not serve city ");
-				if (!flightMap.servesCity(originCity))
-					System.out.println(originCity);
-				else
-					System.out.println(destinationCity);
+				System.out.print("The airline does not serve city "
+						+ (!flightMap.servesCity(originCity) ? originCity:destinationCity));
 			}
 
 			// Otherwise, try to find a path between the origin and the destination.
