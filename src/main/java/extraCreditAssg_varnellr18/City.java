@@ -61,7 +61,7 @@ public class City{
 	 *         in obj, and false otherwise
 	 */
 	public boolean equals(Object obj) {
-		return obj instanceof City && ((City) obj).cityName.equals(this.cityName);
+		return obj instanceof City && ((City) obj).cityName.equalsIgnoreCase(this.cityName);
 	}
 	
 
