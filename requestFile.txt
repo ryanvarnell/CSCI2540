@@ -1,8 +1,8 @@
-Q	X
-P	X
-P	T
-P	Z
-P	X
-P	Q
-T	P
-A	S
+Queens	Xam Neua
+Portland	Xam Neua
+Portland	Town 'n' Country
+Portland	Zhengzhou
+Portland	Xam Neua
+Portland	Queens
+Town 'n' Country	Portland
+Austin	Shanghai

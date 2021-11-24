@@ -1,10 +1,10 @@
-Q	X
-R	X
-P	R
-P	W
-W	S
-S	T
-T	W
-W	Y
-Y	R
-Y	Z
+Queens	Xam Neua
+Rio de Janeiro	Xam Neua
+Portland	Rio de Janeiro
+Portland	Winston-Salem
+Winston-Salem	Shanghai
+Shanghai	Town 'n' Country
+Town 'n' Country	Winston-Salem
+Winston-Salem	Yoshkar-Ola
+Yoshkar-Ola	Rio de Janeiro
+Yoshkar-Ola	Zhengzhou

@@ -1,9 +1,9 @@
-Q
-X
-R
-P
-W
-S
-T
-Y
-Z
+Queens
+Xam Neua
+Rio de Janeiro
+Portland
+Winston-Salem
+Shanghai
+Town 'n' Country
+Yoshkar-Ola
+Zhengzhou
