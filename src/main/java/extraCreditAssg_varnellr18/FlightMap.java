@@ -2,6 +2,7 @@ package extraCreditAssg_varnellr18;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.EmptyStackException;
 import java.util.LinkedList;
 import java.util.Scanner;
 import java.util.Stack;
@@ -230,7 +231,12 @@ public class FlightMap implements FlightMapInterface {
 				stack.push(nextCity);
 				markVisited(nextCity);
 			}	// end if
-			topCity = stack.peek();
+			try {
+				topCity = stack.peek();
+			} catch (EmptyStackException e) {
+				// Yeah, I know the stack's empty stop crashing the program.
+				assert true;
+			}
 		}	// end while
 
 		// If the stack's empty there's no path so return null, otherwise pop the stack to a LinkedList and return it.

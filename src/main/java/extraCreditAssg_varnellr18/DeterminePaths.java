@@ -21,6 +21,9 @@ public class DeterminePaths {
 			System.exit(1);
 		}
 
+		flightMap.displayFlightMap();
+		System.out.println();
+
 		// Loop to begin processing the flight path requests.
 		while (requestFile.hasNextLine()) {
 			String[] cities = requestFile.nextLine().split("\t");
