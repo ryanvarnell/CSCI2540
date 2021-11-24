@@ -21,6 +21,7 @@ public class DeterminePaths {
 			System.exit(1);
 		}
 
+		// Loop to begin processing the flight path requests.
 		while (requestFile.hasNextLine()) {
 			String[] cities = requestFile.nextLine().split("\t");
 			City originCity = new City(cities[0]);
@@ -36,12 +37,14 @@ public class DeterminePaths {
 					System.out.println("No sequence of flights exist between cities " + originCity + " and " 
 							+ destinationCity);
 				else {
-					for (int i = 0; i < path.size(); i++) {
+					for (int i = path.size() - 1; i >= 0; i--) {
 						System.out.print(path.get(i));
 
-						// Will only print the directional arrow up until the last adjacent City.
-						if (i < path.size() - 1)
+						// Will only print the directional arrow up until the last adjacent City, otherwise it'll start
+						// a new line
+						if (i > 0)
 							System.out.print(" -> ");
+						else System.out.println();
 					}
 				}
 			}

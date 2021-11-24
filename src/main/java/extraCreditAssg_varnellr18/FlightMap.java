@@ -150,7 +150,7 @@ public class FlightMap implements FlightMapInterface {
 	 */
 	public void unVisitAll() {
 		for (LinkedList<City> list : flightMap){
-			markVisited(list.get(0));
+			list.get(0).clear();
 		}
 	}
 
