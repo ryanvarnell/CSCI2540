@@ -49,9 +49,6 @@ public class FlightMap implements FlightMapInterface {
 		cityFile.close();
 
 		// Iterate through the adjacency's in the flight file and connect the cities to one another.
-		// Note: The following process of iterating through the flightMap is also performed very similarly in the
-		// insertAdjacent method, so I feel like there is a better way to do this. However, since this method deals
-		// with file/String input and insertAdjacent deals with City objects directly, this works for now.
 		Scanner flightFile = new Scanner(new File(flightFileName));
 		while (flightFile.hasNextLine()) {
 
